@@ -24,17 +24,35 @@ body{
 /* Search bar */
 .search-bar{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-left: 0px;
-    margin-top: 20px;
     z-index: 1;
+    background: #08080843;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    border-bottom: 1px solid #74747491;
+    padding-bottom: 15px;
+    backdrop-filter: blur(100px);
 }
+
+.search-bar .profile-pic{
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: -25px;
+    filter: invert(0);
+    position: relative;
+    display: block;
+}
+
 
 .search-bar input{
     width: 80%;
     height: 40px;
     border: none;
+    margin-top: -25px;
     border-radius: 20px;
     padding-left: 20px;
     background: #080808;
@@ -51,8 +69,52 @@ body{
     height: auto;
     filter: invert(0.5);
     position: absolute;
-    /* margin-left: 250px; */
-    right: 13%;
+    margin-top: -25px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.search-bar .Trending {
+    display: inline-block;
+    color: white;
+    position: fixed;
+    bottom: 5px;
+    left: 250px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.Trending::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #1d9bf0;
+    border-radius: 10px;
+  }
+
+/* New Post Icon */
+.new-post{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 2;
+    background: rgb(120, 147, 217);
+    padding: 10px 12px;
+    border-radius: 20px;
+}
+
+.new-post img{
+    width: 25px;
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header-Mobile */
@@ -90,7 +152,7 @@ body{
 /* Blog-card */
 .master-blog-card{
     padding: 8px;
-    padding-top: 0px;
+    padding-top: 85px;
     padding-bottom: 55px;
 }
 
@@ -146,7 +208,7 @@ body{
 }
 
 .blog-card-footer img{
-    width: 17px;
+    width: 25px;
     filter: invert(0.5);
 }
 
@@ -157,7 +219,7 @@ body{
 
 .blog-card-footer-left p{
     margin-left: 2px;
-    font-size: small;
+    font-size: medium;
 }
 
 .blog-card-footer-right{
@@ -168,7 +230,7 @@ body{
 
 .blog-card-footer-right p{
     margin-left: 6px;
-    font-size: small;
+    font-size: medium;
 }
 
 /* SideBar */
@@ -267,7 +329,23 @@ body{
         padding-left: 180px;
     }
 
+    .search-bar .profile-pic{
+        display: none;
+    }
+
+    .search-bar input{
+        width: 90%;
+    }
+
     .search-bar img{
-        right: 10%;
+        right: 4%;
+        
+    }
+}
+
+
+@media (max-width: 729px){
+    .search-bar .Trending{
+        left: 20px;
     }
 }
