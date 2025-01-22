@@ -21,21 +21,67 @@ body{
     border: 2px solid #080808;
 }
 
-/* Header-Mobile */
-.create-post-mobile{
-    position: fixed;
+/* Search bar */
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.search-bar input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
     background: #080808;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #74747491;
+}
+
+.search-bar img{
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: auto;
+    filter: invert(0.5);
+    position: absolute;
+    /* margin-left: 250px; */
+    right: 13%;
+}
+
+/* Header-Mobile */
+.header-mobile{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-mobile p{
+    color: white;
+    padding-left: 50%;
+}
+
+.header-mobile .create-post-mobile{
+    position: fixed;
+    /* background: #080808; */
     height: 45px;
     z-index: 1;
     width: 100%;
     border-bottom:2px solid #74747491;
     display: flex;
-    justify-content: end;
     align-items: center;
+    margin-top: -70px;
 }
 
-.create-post-mobile img{
-    width: 25px;
+.header-mobile .create-post-mobile img{
+    width: 28px;
     margin-right: 30px;
     filter: invert(1);
 }
@@ -44,7 +90,7 @@ body{
 /* Blog-card */
 .master-blog-card{
     padding: 8px;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 55px;
 }
 
@@ -135,7 +181,16 @@ body{
     border-right: 1px solid #74747491;
     width: 200px;
     height: 100vh;
-    z-index: 10; 
+    z-index: 10; ;
+}
+
+.sidebar-pc .ping-logo img{
+    width: 135px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    filter: invert(0);
+    margin-left: -8px;
 }
 
 .sidebar-pc .option-ul{
@@ -143,6 +198,7 @@ body{
     align-items: center;
     height: 50px;
     gap: 10px;
+    padding-left: 8px;
 }
 
 .sidebar-pc ul{
@@ -156,7 +212,6 @@ body{
 .sidebar-pc ul a{
     text-decoration: none;
     color: #fff;
-    margin-bottom: 20px;
 }
 
 .sidebar-pc img{
@@ -182,7 +237,7 @@ body{
 }
 
 .sidebar ul .option-ul img{
-    width: 25px;
+    width: 28px;
     filter: invert(1);
 }
 
@@ -202,10 +257,17 @@ body{
 
     .master-blog-card{
         margin-left: 200px;
-        padding-top: 0px;
     }
 
     .create-post-mobile{
         display: none;
+    }
+    
+    .search-bar{
+        padding-left: 180px;
+    }
+
+    .search-bar img{
+        right: 10%;
     }
 }

@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ping Client</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ping Search</title>
+    <link rel="stylesheet" href="search.css">
 </head>
 <body>
-    <!-- Header-Mobile -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <img src="https://unpkg.com/@mynaui/icons/icons/search.svg" />
+    </div>
+
+    <!-- Header-Mobile
     <div class="header-mobile">
         <div class="create-post-mobile">
-            <img src="https://unpkg.com/@mynaui/icons/icons/edit-one.svg" />
+            <p>Latest Posts</p>
         </div>
-    </div>
+    </div> -->
 
     <!-- Cards -->
     <div class="master-blog-card">
@@ -92,27 +98,34 @@
     <div class="sidebar-pc">
         <div class="pc-menu">
             <ul>
-                <div class="option-ul">
-                    <img src="https://unpkg.com/@mynaui/icons/icons/square.svg" />
-                    <li><a href="/analytics">Feed</a></li>
-                </div>
-                <div class="option-ul">
-                    <img src="https://unpkg.com/@mynaui/icons/icons/search.svg" />
-                    <li><a href="/payments">Search</a></li>
-                </div>
+                <a href="/FeedPage/feeds.html"><div class="ping-logo">
+                    <img src="/Assets/ping/ping/pinglogo.png" alt="">
+                </div></a>
 
-                <div class="option-ul">
-                    <img src="https://unpkg.com/@mynaui/icons/icons/cog.svg" />
-                    <li><a href="/website">Settings</a></li>
-                </div>
-                <div class="option-ul">
+                <a href="/FeedPage/feeds.html"><div class="option-ul">
+                    <img src="https://unpkg.com/@mynaui/icons/icons/square.svg" />
+                    <li><a href="/FeedPage/feeds.html">Feed</a></li>
+                </div></a>
+
+                <a href="/SearchPage/Search.html"><div class="option-ul">
+                    <img src="https://unpkg.com/@mynaui/icons/icons/search.svg" />
+                    <li><a href="/SearchPage/Search.html">Search</a></li>
+                </div></a>
+
+                <a href="/profile"><div class="option-ul">
+                    <img src="https://unpkg.com/@mynaui/icons/icons/bell.svg" />
+                    <li><a href="/notification">Notification</a></li>
+                </div></a>
+                
+                <a href="/profile"><div class="option-ul">
                     <img src="https://unpkg.com/@mynaui/icons/icons/user.svg" />
-                    <li><a href="/screen">Profile</a></li>
-                </div>
-                <div class="option-ul">
+                    <li><a href="/profile">Profile</a></li>
+                </div></a>
+
+                <a href="/new-post"><div class="option-ul">
                     <img src="https://unpkg.com/@mynaui/icons/icons/edit-one.svg" />
-                    <li><a href="/screen">New Post</a></li>
-                </div>
+                    <li><a href="/new-post">New Post</a></li>
+                </div></a>
             </ul>
         </div>
     </div>
@@ -121,23 +134,25 @@
     <div class="sidebar" id="sidebar">
         <div class="menu">
             <ul>
-                <div class="option-ul">
+                <a href="/FeedPage/feeds.html"><div class="option-ul">
                     <img src="https://unpkg.com/@mynaui/icons/icons/square.svg" />
-                    <!-- <li><a href="/analytics">Analytics</a></li> -->
-                </div>
-                <div class="option-ul">
-                    <img src="https://unpkg.com/@mynaui/icons/icons/search.svg" />
-                    <!-- <li><a href="/payments">Payments</a></li> -->
-                </div>
+                    <!-- <li><a href="/FeedPage/feeds.html">Feed</a></li> -->
+                </div></a>
 
-                <div class="option-ul">
-                    <img src="https://unpkg.com/@mynaui/icons/icons/cog.svg" />
-                    <!-- <li><a href="/website">Website</a></li> -->
-                </div>
-                <div class="option-ul">
+                <a href="/SearchPage/Search.html"><div class="option-ul">
+                    <img src="https://unpkg.com/@mynaui/icons/icons/search.svg" />
+                    <!-- <li><a href="/SearchPage/Search.html">Search</a></li> -->
+                </div></a>
+
+                <a href="/profile"><div class="option-ul">
+                    <img src="https://unpkg.com/@mynaui/icons/icons/bell.svg" />
+                    <!-- <li><a href="/notification">Notification</a></li> -->
+                </div></a>
+                
+                <a href="/profile"><div class="option-ul">
                     <img src="https://unpkg.com/@mynaui/icons/icons/user.svg" />
-                    <!-- <li><a href="/screen">Screen</a></li> -->
-                </div>
+                    <!-- <li><a href="/profile">Profile</a></li> -->
+                </div></a>
             </ul>
         </div>
     </div>
